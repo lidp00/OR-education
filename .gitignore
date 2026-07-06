@@ -1,0 +1,12 @@
+# Virtuální prostředí
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data a citlivé soubory
+*.csv
+*.xlsx
+.env
