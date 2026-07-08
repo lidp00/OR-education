@@ -39,6 +39,9 @@ def solve_post_office():
         print(" OPTIMÁLNÍ ŘEŠENÍ NALEZENO (GLOP Solver) ")
         print("=========================================")
         print(f"Celkový počet zaměstnanců: {solver.Objective().Value():.2f}\n")
+
+    # Týdenní náklady na práci pro porovnání s part time variantou problému
+        print(f"Celkové týdenní náklady: {15 * 5 * 8 * (solver.Objective().Value()):.2f}\n")
         
         print(f"Začínají v Po (x1): {x1.solution_value():.2f}")
         print(f"Začínají v Út (x2): {x2.solution_value():.2f}")
